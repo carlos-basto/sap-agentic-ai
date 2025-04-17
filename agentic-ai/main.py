@@ -154,7 +154,7 @@ class AgentExecutor:
             except Exception as e:
                 return f"Error: {str(e)}"
         else:
-            return f"⚠️ Function '{func_name}' not found."
+            return f"Function '{func_name}' not found."
 
     def _finalize_response(self, original_query, tool_results, messages):
         # Append summary and results to LLM context
